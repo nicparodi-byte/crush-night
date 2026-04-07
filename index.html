@@ -148,7 +148,7 @@ h1.hero-title .night{color:var(--v1);}
 .sc-track{height:3px;background:rgba(171,97,255,.15);border-radius:2px;overflow:hidden;}
 .sc-fill{height:100%;width:0;background:linear-gradient(90deg,var(--v1),var(--rose));
   border-radius:2px;transition:width 1.5s ease .8s;}
-.sc-fill.on{width:33%;}
+.sc-fill.on{width:36%;}
 
 /* right — photo panel */
 .hero-image{position:relative;overflow:hidden;}
@@ -584,7 +584,7 @@ footer{background:rgba(13,0,20,.9);border-top:1px solid var(--bord);
     <div class="scarcity">
       <div class="sc-label">
         <span>Billets vendus</span>
-        <strong>⚠ <span id="count-hero">55</span> places restantes</strong>
+        <strong>⚠ <span id="count-hero">50</span> places restantes</strong>
       </div>
       <div class="sc-track"><div class="sc-fill" id="hero-fill"></div></div>
     </div>
@@ -753,7 +753,7 @@ footer{background:rgba(13,0,20,.9);border-top:1px solid var(--bord);
     <h2>Votre place vous attend. Pas longtemps.</h2>
     <div class="ticket-warning">
       <span class="wi">⚡</span>
-      <p><strong><span id="count-warning">55</span> places restantes. Ne laissez pas quelqu’un d’autre prendre votre place.</strong></p>
+      <p><strong><span id="count-warning">50</span> places restantes. Ne laissez pas quelqu’un d’autre prendre votre place.</strong></p>
     </div>
     <p class="body-txt">29 €, c’est le prix d’un dîner que vous aurez oublié dans une semaine. Cette soirée, vous vous en souviendrez.</p>
   </div>
@@ -913,7 +913,7 @@ if ('IntersectionObserver' in window) {
 }
 
 window.addEventListener('load', () => {
-  setTimeout(() => { document.getElementById('hero-fill').classList.add('on'); const scf = document.querySelector('.scf'); if(scf) scf.style.width='33%'; }, 400);
+  setTimeout(() => { document.getElementById('hero-fill').classList.add('on'); const scf = document.querySelector('.scf'); if(scf) scf.style.width='36%'; }, 400);
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
